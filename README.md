@@ -1,0 +1,22 @@
+# Example
+
+A fast, accessible React website.
+
+## Develop
+
+```bash
+pnpm install
+pnpm dev
+```
+
+## Verify
+
+```bash
+pnpm check
+pnpm lint
+pnpm test
+pnpm build
+```
+
+The application uses React with Vite and TypeScript. Vitest covers component
+behavior, while Playwright and axe cover browser behavior and accessibility.

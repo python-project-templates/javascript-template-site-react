@@ -1,0 +1,10 @@
+# Changes here will be overwritten by Copier
+_commit: 63651ef
+_src_path: https://github.com/python-project-templates/base.git
+add_extension: site-react
+brand_name: Example
+github: python-project-templates
+project_description: A fast, accessible React website.
+project_name: javascript-template-site-react
+site_url: https://example.com
+
