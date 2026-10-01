@@ -1,7 +1,6 @@
 export default function App() {
   return (
     <main>
-      <p className="eyebrow">Example</p>
       <h1>Example</h1>
       <p>A fast, accessible React website.</p>
       <a className="button" href="#develop">

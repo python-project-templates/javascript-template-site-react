@@ -1,7 +1,14 @@
 :root {
-  color: #171717;
-  background: #ffffff;
+  --brand-bg: #ffffff;
+  --brand-fg: #171717;
+  --brand-fg-muted: #5c5c5c;
+  --brand-border: #e0e0e0;
+  --brand-focus: #1a56c4;
+
+  color: var(--brand-fg);
+  background: var(--brand-bg);
   font-family: system-ui, sans-serif;
+  color-scheme: light;
 }
 
 body {
@@ -11,34 +18,32 @@ body {
 main {
   width: min(calc(100% - 3rem), 64rem);
   margin: 0 auto;
-  padding: 6rem 0;
-}
-
-.eyebrow {
-  font-size: 0.75rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  padding: 3rem 0 6rem;
 }
 
 h1 {
-  margin: 2rem 0 1rem;
-  font-size: clamp(3rem, 10vw, 8rem);
-  line-height: 0.9;
-  letter-spacing: -0.06em;
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+  font-weight: 600;
 }
 
-main > p:not(.eyebrow) {
-  max-width: 42rem;
+main > p {
+  max-width: 60ch;
   margin-bottom: 2rem;
-  font-size: 1.25rem;
+  color: var(--brand-fg-muted);
   line-height: 1.6;
 }
 
 .button {
   display: inline-block;
-  padding: 0.75rem 1rem;
-  color: #ffffff;
-  background: #171717;
-  border-radius: 0.35rem;
+  padding: 0.6rem 1rem;
+  color: var(--brand-bg);
+  background: var(--brand-fg);
   text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--brand-focus);
+  outline-offset: 4px;
 }
